@@ -245,6 +245,30 @@ footer {
   text-decoration: none;
   color: var(--main-font-color);
 }
+.nav-agency-highlight,
+.nav-portfolio-highlight {
+  position: relative;
+}
+.nav-agency-highlight::after {
+  left: 0;
+  bottom: -33px;
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--blue-color);
+}
+.nav-portfolio-highlight::after {
+  left: 0;
+  bottom: -33px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--blue-color)
+}
 
 .navigation-item:hover,
 .navigation-item:focus {
