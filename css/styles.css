@@ -76,6 +76,8 @@ address {
   margin-bottom: 0;
 }
 .portfolio-image-box {
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
