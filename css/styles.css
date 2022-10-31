@@ -115,7 +115,7 @@ address {
 }
 
 header {
-  height: 80px;
+  padding-block: 24px 25px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -129,6 +129,7 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 46px;
+  margin-block: 0;
   margin-right: 371px;
 }
 .webstudio {
