@@ -368,22 +368,6 @@ footer {
   background-color: var(--blue-color);
   --color4: var(--white-background);
 }
-.instagram {
-  width: 20px;
-  height: 20px;
-}
-.twitter {
-  width: 20px;
-  height: 20px;
-}
-.facebook {
-  width: 20px;
-  height: 20px;
-}
-.linkedin {
-  width: 20px;
-  height: 20px;
-}
 .join-us {
   font-weight: 700;
   font-size: 14px;
