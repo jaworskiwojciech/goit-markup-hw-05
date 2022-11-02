@@ -250,11 +250,14 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .contact-item {
+  color: var(--contact-color);
+  fill: var(--contact-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--cubic-bezier),
+    fill var(--transition-duration) var(--cubic-bezier);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--contact-color);
-  text-decoration: none;
 }
 .header-telephone,
 .header-email {
@@ -273,10 +276,11 @@ header {
 .contact-item:hover,
 .contact-item:focus {
   color: var(--blue-color);
+  fill: var(--blue-color);
 }
 .header-email:hover,
 .header-telephone:hover {
-  --color3: var(--blue-color);
+  fill: var(--blue-color);
   transition: transform;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -430,30 +434,23 @@ footer {
 }
 .client-icon-background {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+  fill: var(--grey-icon-color);
   transition: border var(--transition-duration) var(--cubic-bezier),
     fill var(--transition-duration) var(--cubic-bezier);
   will-change: border, fill;
 }
+.client-icon-background:hover {
+  border-color: var(--blue-color);
+  fill: var(--blue-color);
+}
 .client-logo {
   width: 106px;
   height: 60.04px;
-  fill: var(--grey-icon-color);
-  transition: fill var(--transition-duration) var(--cubic-bezier);
-  will-change: fill;
 }
-.client-icon-background:hover {
-  border: 1px solid var(--blue-color);
-  fill: var(--white-background);
-}
-.client-logo:hover {
-  fill: var(--blue-color);
-}
+
 .section-tertiary {
   display: flex;
   justify-content: space-between;
@@ -512,15 +509,17 @@ footer {
   gap: 10px;
 }
 .social-background {
+  display: flex;
   width: 44px;
   height: 44px;
+  background-color: var(--white-background);
   border-radius: 22px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--grey-icon-color);
   transition: background-color var(--transition-duration) var(--cubic-bezier),
-    --color4 var(--transition-duration) var(--cubic-bezier);
-  will-change: background-color, --color4;
+    fill var(--transition-duration) var(--cubic-bezier);
+  will-change: background-color, fill;
 }
 .social-background:hover,
 .footer-social-background:hover {
@@ -556,13 +555,6 @@ footer {
   will-change: background-color;
 }
 /* ==========ICONS========== */
-.social-icon {
-  fill: var(--grey-icon-color);
-  transition: fill var(--transition-duration) var(--cubic-bezier);
-}
 .social-icon-footer {
-  fill: var(--white-background);
-}
-.social-icon:hover {
   fill: var(--white-background);
 }
