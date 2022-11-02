@@ -127,7 +127,7 @@ address {
   position: relative;
   overflow: hidden;
 }
-.portfolio-image-box:hover .overlay {
+.list-item-box:hover .overlay {
   transform: translateY(0);
 }
 .overlay {
