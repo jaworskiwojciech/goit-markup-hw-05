@@ -9,6 +9,7 @@
   --main-image-linear-gradient: rgba(47, 48, 58, 0.4);
   --transition-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --border-grid: #eeeeee;
 }
 
 body {
@@ -151,9 +152,9 @@ address {
   color: #ffffff;
 }
 .portfolio-box-description {
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-grid);
+  border-left: 1px solid var(--border-grid);
+  border-bottom: 1px solid var(--border-grid);
 }
 .list-item-box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
