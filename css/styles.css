@@ -10,6 +10,9 @@
   --transition-duration: 250ms;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
   --border-grid: #eeeeee;
+  --backdrop-color: rgba(0, 0, 0, 0.2);
+  --offer-description-background: rgba(47, 48, 58, 0.8);
+  --overlay-background: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -44,7 +47,7 @@ address {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--backdrop-color);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -85,7 +88,7 @@ address {
   position: absolute;
   bottom: 4px;
   padding-block: 27px;
-  background: rgba(47, 48, 58, 0.8);
+  background: var(--offer-description-background);
 }
 .offer-paragraph {
   margin: 0;
@@ -137,7 +140,7 @@ address {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-background);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
@@ -221,7 +224,7 @@ header {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   color: var(--main-font-color);
-  background-color: #f5f4fa;
+  background-color: var(--gray-background);
   border: 0px solid #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
