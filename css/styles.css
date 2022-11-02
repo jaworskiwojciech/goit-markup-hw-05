@@ -13,6 +13,7 @@
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --offer-description-background: rgba(47, 48, 58, 0.8);
   --overlay-background: rgba(33, 150, 243, 0.9);
+  --grey-icon-color: #afb1b8;
 }
 
 body {
@@ -62,6 +63,9 @@ address {
   margin: auto;
 }
 .modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -73,7 +77,7 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .close-x {
-  fill: black;
+  fill: #000000;
 }
 
 .list-style {
@@ -259,7 +263,12 @@ header {
 }
 .telephone,
 .envelope {
+  fill: var(--contact-color);
   margin-right: 5px;
+}
+.telephone:hover,
+.envelope:hover {
+  fill: var(--blue-color);
 }
 .contact-item:hover,
 .contact-item:focus {
@@ -428,20 +437,23 @@ footer {
   width: 170px;
   height: 92px;
   transition: border var(--transition-duration) var(--cubic-bezier),
-    --color4 var(--transition-duration) var(--cubic-bezier);
-  will-change: border, --color4;
-}
-.client-icon-background:hover {
-  border: 1px solid var(--blue-color);
-  --color4: var(--blue-color);
+    fill var(--transition-duration) var(--cubic-bezier);
+  will-change: border, fill;
 }
 .client-logo {
   width: 106px;
   height: 60.04px;
+  fill: var(--grey-icon-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+  will-change: fill;
 }
-/* .client-logo:hover {
-  --color4: var(--blue-color);
-} */
+.client-icon-background:hover {
+  border: 1px solid var(--blue-color);
+  fill: var(--white-background);
+}
+.client-logo:hover {
+  fill: var(--blue-color);
+}
 .section-tertiary {
   display: flex;
   justify-content: space-between;
@@ -513,7 +525,7 @@ footer {
 .social-background:hover,
 .footer-social-background:hover {
   background-color: var(--blue-color);
-  --color4: var(--white-background);
+  fill: var(--white-background);
 }
 .join-us {
   font-weight: 700;
@@ -542,4 +554,15 @@ footer {
   align-items: center;
   transition: background-color var(--transition-duration) var(--cubic-bezier);
   will-change: background-color;
+}
+/* ==========ICONS========== */
+.social-icon {
+  fill: var(--grey-icon-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}
+.social-icon-footer {
+  fill: var(--white-background);
+}
+.social-icon:hover {
+  fill: var(--white-background);
 }
